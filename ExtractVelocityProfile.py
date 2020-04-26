@@ -84,3 +84,7 @@ if __name__ == "__main__":
 		data, line = extractLine(dataset, zoneNr - 1, nodeNr - 1, distance)
 		drawProfile(data, line, i, nameList)
 		i = i + 1
+
+	#Tile frame nicely
+	tp.macro.execute_extended_command(command_processor_id='Multi Frame Manager',
+    command='TILEFRAMESVERT')
